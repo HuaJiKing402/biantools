@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "biantools",
+  "version": "${version}",
+  "name": "Biantools",
+  "description": "",
+  "authors": ["HuaJiKing402"],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/biantools/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["top.biannetwork.biantools.Main"],
+    "server": ["top.biannetwork.biantools.Server_Initialize"],
+    "client": ["top.biannetwork.biantools.Client_Initialize"]
+  },
+  "mixins": [
+    "biantools.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.12",
+    "fabric": "*",
+    "minecraft": "1.19.3"
+  }
+}
